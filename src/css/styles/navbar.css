@@ -1,0 +1,48 @@
+.btn-navbar {
+    background-color: transparent;
+    font-size: 3rem;
+    top: 1rem;
+    color: var(--black);
+}
+
+.container-navbar {
+    background-color: var(--bg-blue);
+    width: 0rem;
+    transition: width 0.3s ease;
+
+    & .navbar div {
+        width: 20rem;
+        overflow-y: auto;
+        margin-top: 4rem;
+        padding-bottom: 5rem;
+    }
+}
+
+.btn-content {
+    background-color: transparent;
+    color: var(--black);
+    border-radius: 0.2rem;
+    transition: background-color 0.2s ease;
+
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: var(--blue-white);
+        bottom: 0;
+        left: 0;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.3s ease;
+    }
+
+    &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+
+    &:hover {
+        background-color: var(--white);
+    }
+}

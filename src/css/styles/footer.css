@@ -1,0 +1,51 @@
+.section-redes {
+    border-bottom: 1px solid var(--gray-box-shadow);
+    background-color: var(--white);
+}
+
+.container-redes {
+    padding: 2rem 3.8rem;
+
+    & h3 {
+        color: var(--gray);
+    }
+
+    & i {
+        font-size: 1.5rem;
+        color: var(--black);
+    }
+}
+
+.container-footer {
+    background-color: var(--white);
+    padding: 2rem 3rem;
+}
+
+.container-sections-footer {
+    flex-direction: column;
+
+    @media screen and (width > 1024px) {
+        & {
+            flex-direction: row;
+        }
+    }
+}
+
+.footer {
+    color: var(--gray);
+
+    & a {
+        color: var(--gray);
+    }
+
+    & select {
+        color: var(--gray);
+        background-color: var(--white);
+    }
+
+    @media screen and (width > 1024px) {
+        & {
+            flex-direction: row;
+        }
+    }
+}

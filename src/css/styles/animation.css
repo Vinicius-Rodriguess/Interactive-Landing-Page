@@ -1,0 +1,41 @@
+.animate-top{animation:animatetop 1.5s;}
+@keyframes animatetop{from{transform: translateY(-20px);} to{transform: translateY(0px);}}
+
+.animate-right{animation:animateright 1.5s;}
+@keyframes animateright{from{transform: translateX(20px);} to{transform: translateX(0px);}}
+
+.animate-bottom{animation:animatebottom 1.5s;}
+@keyframes animatebottom{from{transform: translateY(20px);} to{transform: translateY(0px);}}
+hover
+.animate-left{animation:animateleft 1.5s;}
+@keyframes animateleft{from{transform: translateX(-20px);} to{transform: translateX(0px);}}
+
+.btn-ani-left{animation: btnLeft 1s ease;}
+@keyframes btnLeft {100% {transform: rotate(360deg);}}
+
+.btn-ani-right{animation: btnRight 1s ease;}
+@keyframes btnRight {100% {transform: rotate(-360deg);}}
+
+.hide {
+    display: none;
+}
+
+.width {
+    width: 20rem;
+}
+
+.active-navbar {
+    filter: blur(1px);
+    margin-left: 0;    
+
+    @media screen and (width > 1024px) {
+        & {
+            margin-left: 20rem;
+            filter: blur(0);
+        }
+    }
+}
+
+.no-scroll {
+    overflow: hidden; 
+}

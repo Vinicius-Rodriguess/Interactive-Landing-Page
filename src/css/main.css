@@ -1,0 +1,188 @@
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+@import url("./styles/classes.css");
+@import url("./styles/temas.css");
+@import url("./styles/navbar.css");
+@import url("./styles/modal.css");
+@import url("./styles/animation.css");
+@import url("./styles/cards.css");
+@import url("./styles/footer.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Product Sans", arial, sans-serif;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--blue-white);
+    border-radius: 3px;
+}
+
+body {
+    background-color: var(--bg-blue);
+    overflow-x: hidden;
+}
+
+.header-img-shapes {
+    background-image: var(--bg-img);
+    height: 15rem;
+
+    & h1 {
+        color: var(--blue-escuro);
+        font-size: 2rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        font-weight: 500;
+    }
+
+    & p {
+        color: var(--black);
+        font-size: 1rem;
+        background-color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+    }
+
+    @media screen and (width > 640px) {
+        & h1 {
+            font-size: 3rem;
+        }
+
+        & p {
+            text-align: left;
+        }
+    }
+
+    @media screen and (width > 1024px) {
+        & {
+            background-attachment: fixed;
+        }
+
+        & h1 {
+            font-size: 3.5rem;
+        }
+
+        & p {
+            font-size: 1rem;
+        }
+    }
+}
+
+.text--black {
+    color: var(--black);
+}
+
+.header-img-logo {
+    margin-top: -1rem;
+
+    & img {
+        background-color: var(--bg-blue);
+        padding: 0.2rem;
+        height: 5rem;
+        transition: all 0.5s ease;
+
+        &:hover {
+            transform: scale(1.1) rotate(360deg);
+        }
+    }
+}
+
+.container-general {
+    transition: margin-left 0.3s ease;
+}
+
+.section-others h2 {
+    color: var(--black);
+    font-size: 2rem;
+
+    @media screen and (width > 640px) {
+        & h2 {
+            font-size: 2rem;
+        }
+    }
+}
+
+.container-secondary-cards {
+    grid-template-columns: repeat(1, 1fr);
+
+    @media screen and (width > 1024px) {
+        & {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.container-hidden-cards {
+    grid-template-columns: repeat(1, 1fr);
+
+    @media screen and (width > 1024px) {
+        & {
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+.container-btn {
+    margin: 2rem 0;
+
+    & .btn {
+        background-color: var(--blue-white);
+        padding: 1rem 2rem;
+
+        & i {
+            transition: transform 0.2s ease;
+        }
+    }
+}
+
+.bi-up {
+    transform: rotate(180deg);
+}
+
+.cont-feedback {
+    opacity: 0;
+    height: 9rem;
+    width: 20rem;
+
+    pointer-events: none;
+    transition: 0.2s all ease;
+    background-color: var(--bg-cont-card);
+    color: var(--black);
+}
+
+.active {
+    opacity: 1;
+    pointer-events: initial;
+}
+
+.text-green {
+    color: green;
+}
+
+.btn-feedback {
+    transition: 0.5s all ease;
+    color: var(--black);
+    background-color: var(--bg-btn-card);
+
+    &:hover {
+        background-color: rgb(238, 146, 84);
+    }
+}
+
+.max-w-card {
+    max-width: 22rem;
+}
+
+.bg-orange {
+    background-color: var(--blue-white);
+}
+.text-orange {
+    color: var(--blue-white);
+}

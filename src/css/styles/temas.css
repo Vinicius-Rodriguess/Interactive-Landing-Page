@@ -1,0 +1,29 @@
+:root.light {
+    --blue-escuro: #000000;
+    --bg-img: url(/src/imgs/bg-light.jpg);
+    --black: #1f1f1f;
+    --bg-blue: #f8fafd;
+    --blue-white: #ff5900;
+    --gray: #474747;
+    --blue-medium: #edf2fa;
+    --gray-box-shadow: #ebedf0;
+    --blue-link: #1967d2;
+    --white: #fff;
+    --bg-btn-card: #ebebeb;
+    --bg-cont-card: #ffffff;
+}
+
+:root.dark {
+    --blue-escuro: rgb(255, 255, 255);    
+    --bg-img: url(/src/imgs/bg-black.jpeg);
+    --black: #e3e3e3;
+    --bg-blue: #28292a;
+    --blue-white: #ff5900;    
+    --gray: #cacaca;
+    --blue-medium: rgb(72, 73, 73);
+    --gray-box-shadow: #3f3d3d;
+    --blue-link: #3589ff;
+    --white: #1f1f1f;
+    --bg-btn-card: rgb(150, 147, 147);
+    --bg-cont-card: rgb(87, 87, 87);
+}

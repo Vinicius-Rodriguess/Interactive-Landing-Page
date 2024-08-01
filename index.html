@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudo Gostoso</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="shortcut icon" href="./src/imgs/logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/main.css">
+
+    <script src="./src/js/main.js" type="module" defer></script>
+</head>
+
+<body class="flex min-h-screen">
+    <!-- Navbar Button -->
+    <button class="bi bi-list btn-navbar btn-ani-right fixed z-2 left-1 border-none cursor-pointer text-orange"></button>
+
+    <!-- Navbar -->
+    <div class="container-navbar left-0 top-0 bottom-0 z-1 overflow-hidden fixed shadow-1">
+        <div class="navbar w-full h-full relative">
+            <i class="bi bi-brightness-high btn-change-theme absolute right-1 top-1 text-1 cursor-pointer text--black"></i>
+            <div class="flex flex-col p-1 absolute right-0 gap-1 h-full">
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="everything" path="all" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="appetizersStarters" path="appetizersStarters" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="mainCourses" path="mainCourses" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="sideDishes" path="sideDishes" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="soupsBroths" path="soupsBroths" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="snacks" path="snacks" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="sweetsDesserts" path="sweetsDesserts" data-animate="left"></button>
+                <button class="btn-content border-none p-1 text-1 text-start cursor-pointer relative"
+                    translate="beverages" path="beverages" data-animate="left"></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="container-general w-full">
+
+        <!-- Feedback Card -->
+        <div class=" lex flex-col p-.5 rounded-.5 shadow-2 fixed bg-white right-1 bottom-2 z-2 cont-feedback max-w-card">
+            <div class="feedback-1">
+                <div class=" flex p-1 relative pt-1.5 text-center w-full items-center justify-center">
+                    <i class="bi bi-x-lg absolute top-0 right-0  cursor-pointer text-1 btn-close-cardfeedback"></i>
+                    <p class="text-1" translate="didWeManage"></p>
+                </div>
+                <div class="flex  items-center w-full justify-around">
+                    <button
+                        class="bg-orange btn-feedback flex justify-center gap-.5 p-.5 px-2 rounded-.5 shadow-1 border-none cursor-pointer btn-like-cardfeedback">
+                        <i class="bi bi-emoji-smile text-1 font-bold text-white"></i>
+                        <span class="text-1 font-bold text-white" translate="yes"></span>
+                    </button>
+                    <button
+                        class="bg-orange btn-feedback flex justify-center gap-.5 p-.5 px-2 rounded-.5 shadow-1 border-none cursor-pointer btn-deslike-cardfeedback">
+                        <i class="bi bi-emoji-frown text-1 font-bold text-white"></i>
+                        <span class="text-1 font-bold text-white" translate="no"></span>
+                    </button>
+                </div>
+            </div>
+            <div class="hide feedback-2 flex items-center justify-center">
+                <div class="flex  items-center justify-center">
+                    <i class="bi bi-bookmark-check-fill text-2 text-orange p-.5"></i>
+                </div>
+                <div class="flex flex-col gap-.5 p-1 items-center justify-center">
+                    <p class="font-bold self-start" translate="thankYou"></p>
+                    <p translate="yourFeedback"></p>
+                </div>
+            </div>
+            <div class="relative feedback-3 hide w-full p-.5 flex flex-col gap-.5">
+                <p class="font-bold" translate="whatWent"></p>
+                <div class="flex gap-.5">
+                    <input type="checkbox" class="cursor-pointer checkbox-feedback"
+                        value="The information is not clear">
+                    <p translate="theInformation"></p>
+                </div>
+                <div class="flex gap-.5">
+                    <input type="checkbox" class="cursor-pointer checkbox-feedback" value="The solution does not work">
+                    <p translate="theSolution"></p>
+                </div>
+                <div class="flex gap-.5">
+                    <input type="checkbox" class="cursor-pointer checkbox-feedback"
+                        value="I don't like the product or policy">
+                    <p translate="iDontLike"></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header Fixed -->
+        <header data-animate="top" class="m-1">
+            <div
+                class="header-img-shapes bg-center bg-no-repeat bg-cover flex flex-col items-center text-center justify-center gap-1 w-full p-1 rounded-1.5">
+                <h1 translate="titlepage" class="backdrop-blur-1 p-.5 rounded-1 text-1"></h1>
+                <p translate="subtitlepage" class="text-1.5 backdrop-blur-1 p-.5 rounded-1"></p>
+            </div>
+            <div class="header-img-logo w-full text-center">
+                <img src="./src/imgs/logo.jpg" alt="Logo da empresa" class="rounded-full">
+            </div>
+        </header>
+
+        <main class="m-1 relative">
+            <!-- Container Main Card -->
+            <div class="container-main-cards"></div>
+            <section class="mt-1 flex flex-col items-center justify-center w-full gap-1">
+                <h2 translate="discoverotherresources" class="font-normal text-2 text-center text--black"></h2>
+
+                <!-- Container Seconday Card -->
+                <div class="container-secondary-cards grid p-1 gap-1 w-full" data-animate="bottom"></div>
+
+                <!-- Container Seconday Hidden -->
+                <div class="container-hidden-cards hide grid p-1 gap-1 w-full"></div>
+                
+                <!-- Button More -->
+                <div class="container-btn w-full flex items-center justify-center">
+                    <button class="btn rounded-2 text-1 border-none cursor-pointer flex gap-.5 border-none font-bold text-white">
+                        <span translate="seemorebtn" class="text-white"></span>
+                        <i class="bi bi-chevron-down icon-btn-more text-1 font-bold text-white"></i>
+                    </button>
+                </div>
+            </section>
+
+        </main>
+        <footer>
+            <!-- Container Redes -->
+            <section class="section-redes">
+                <div class="container-redes flex items-center gap-1.5">
+                    <h3 translate="followus"></h3>
+                    <a target="_blank" href="#"><i
+                            class="bi bi-instagram"></i></a>
+                    <a target="_blank" href="#"><i
+                            class="bi bi-facebook"></i></a>
+                </div>
+            </section>
+
+            <!-- Container Footer -->
+            <section class="container-footer">
+                <div class="container-sections-footer flex gap-2 p-1">
+                    <div class="footer flex flex-col gap-1 items-center justify-center">
+                        <h3>Tudo Gostoso</h3>
+                        <a href="#" translate="privacyandterms" class="decoration-none"></a>
+                        <a href="#" translate="aboutGostoso" class="decoration-none"></a>
+                        <select class="input-language text-1 border-none cursor-pointer">
+                            <option value="1" selected>Português</option>
+                            <option value="0">English</option>
+                            <option value="2">Español</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+        </footer>
+    
+        <!-- last Footer -->
+        <div class="container-modal hide fixed inset-0 flex z-2">
+            <div class="h-full w-full flex flex-col">
+                <div class="header-content flex w-full items-center justify-between">
+                    <span class="span-counter"></span>
+                    <button class="bi bi-x btn-modal border-none cursor-pointer text-2"></button>
+                </div>
+                <div class="flex h-full p-1 gap-1">
+                    <button
+                        class="bi bi-chevron-left btn-modal-previus border-none text-1.5 cursor-pointer font-bold"></button>
+                    <div class="content-img bg-center"></div>
+                    <button
+                        class="bi bi-chevron-right btn-modal-next border-none text-1.5 cursor-pointer font-bold"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+.container-modal {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.header-content {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1rem 4rem;
+
+    & span {
+        color: var(--blue-escuro);
+        font-size: 1.4rem;
+    }
+}
+
+.btn-modal {
+    background-color: transparent;
+    color: var(--black);
+}
+
+.btn-modal-previus,
+.btn-modal-next {
+    background-color: transparent;
+    color: var(--white);
+    transition: transform 0.2s ease;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.content-img {
+    max-height: 80vh;
+    transition: transform 0.4s ease;
+
+    &:hover {
+        transform: scale(1.01) translateY(-3px);
+    }
+}
