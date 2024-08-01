@@ -1,6 +1,6 @@
 :root.light {
     --blue-escuro: #000000;
-    --bg-img: url(../../src/imgs/bg-light.jpg);
+    --bg-img: url(/src/imgs/bg-light.jpg);
     --black: #1f1f1f;
     --bg-blue: #f8fafd;
     --blue-white: #ff5900;
@@ -15,7 +15,7 @@
 
 :root.dark {
     --blue-escuro: rgb(255, 255, 255);    
-    --bg-img: url(../../imgs/bg-black.jpeg);
+    --bg-img: url(/src/imgs/bg-black.jpeg);
     --bg-img: url();
     --black: #e3e3e3;
     --bg-blue: #28292a;
