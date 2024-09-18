@@ -1,3 +1,29 @@
+# Página de Entrada Interativa
+
+## Visão Geral
+O projeto Página de Entrada Interativa oferece uma solução completa para criar uma página de entrada moderna e funcional. Esta ferramenta interativa permite aos usuários:
+
+- **Explorar Conteúdo:** Navegar por diversos conteúdos com uma experiência de usuário otimizada.
+- **Modos Escuro e Claro:** Alternar facilmente entre modos de visualização escuro e claro para uma melhor experiência de navegação.
+- **Seletor de Idiomas:** Suporte para múltiplos idiomas, incluindo Inglês, Português e Espanhol, permitindo que os usuários escolham seu idioma preferido.
+- **Rolagem Suave:** Aproveitar uma rolagem suave para uma experiência de navegação mais fluida e agradável.
+- **Sistema de Rotas:** Renderizar dinamicamente o conteúdo JSON por meio de um sistema de rotas eficiente e fácil de gerenciar.
+
+Se você está procurando explorar conteúdos de forma casual ou deseja uma experiência de navegação aprimorada, este projeto oferece uma solução robusta e amigável ao usuário.
+
+## Funcionalidades
+- **Modos Escuro e Claro:** Alternar entre os modos de visualização com um simples clique.
+- **Seletor de Idiomas:** Escolha entre Inglês, Português e Espanhol para visualizar o conteúdo no seu idioma preferido.
+- **Rolagem Suave:** Implementação de rolagem suave para uma experiência de navegação mais agradável.
+- **Sistema de Rotas:** Utiliza rotas para renderizar dinamicamente o conteúdo JSON, facilitando a atualização e o gerenciamento da página.
+- **Atualizações em Tempo Real:** Exibe e atualiza o conteúdo dinamicamente em tempo real.
+
+<a href="https://vinicius-rodriguess.github.io/Interactive-Landing-Page" target="_blank">Clique aqui para testar o projeto!</a>
+<p></p>
+<img src="./src/imgs/landing-light.png"/>
+<p></p>
+<img src="./src/imgs/landing-dark.png"/>
+
 # Interactive Landing Page
 
 ## Overview
@@ -19,9 +45,3 @@ Whether you are looking to casually explore content or for an enhanced browsing 
 - **Real-time Updates**: Dynamically displays content and updates in real-time.
 
 <a href="https://vinicius-rodriguess.github.io/Interactive-Landing-Page" target="_blank">Click here to test the project!</a>
-<p></p>
-<img src="./src/imgs/landing-light.png"/>
-<p></p>
-<img src="./src/imgs/landing-dark.png"/>
-
-Explore the code, contribute with improvements, or report any issues found. Your feedback is greatly appreciated!
